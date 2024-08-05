@@ -1,0 +1,11 @@
+<div style="height: 400px;">
+  <ngs-code-editor (ngModel)="code" ></ngs-code-editor>
+</div>
+<div>
+  <label for="language">Select Language:</label>
+  <select id="language" [(ngModel)]="selectedLanguage" (change)="onLanguageChange()">
+    <option *ngFor="let lang of languages" [value]="lang.value">{{ lang.label }}</option>
+  </select>
+</div>
+<button (click)="runCode()">Run</button>
+<pre>{{ output }}</pre>
