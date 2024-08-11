@@ -22,7 +22,17 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/monaco-editor/min/vs",
+                "output": "/assets/monaco-editor/vs"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/monaco-editor/esm/vs",
+                "output": "/assets/monaco-editor/esm/vs"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -96,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e34014c1-8a39-481a-ac70-23f30cc5c544"
   }
 }
