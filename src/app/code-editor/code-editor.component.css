@@ -1,0 +1,9 @@
+.controls-block {
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language {
+    padding: 5px;;
+}
